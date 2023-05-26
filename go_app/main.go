@@ -38,7 +38,7 @@ func main() {
 	}
 
 	temperatureC := weatherData.Temperature
-	temperatureC -= 273.15
+	temperatureC += 20
 
 	fmt.Printf("The temperature outside is %.2f °C!\n", temperatureC)
 
