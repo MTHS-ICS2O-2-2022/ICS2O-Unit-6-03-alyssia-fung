@@ -11,6 +11,8 @@ if (navigator.serviceWorker) {
 
 ;("use strict")
 
+// this is where I got async and await
+// https://www.w3schools.com/js/js_async.asp
 const weather2 = async (URLAddress) => {
   try {
     const request = await fetch(URLAddress)
@@ -28,6 +30,8 @@ const weather2 = async (URLAddress) => {
       "@2x.png' alt='Icon' width='10%'><br><h5>"
     ;(">")
 
+    // this is where I got catch (err)
+    // https://www.w3schools.com/js/js_errors.asp
     document.getElementById("theTemp").innerHTML =
       "The tempurature outside is " + tempature2.toFixed(2) + " °C!"
   } catch (err) {
